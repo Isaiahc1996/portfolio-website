@@ -1,0 +1,43 @@
+/*
+Colors used:
+Primary Color (Gray): #F5F3F3;
+Secondary Color (Pale Blue): #7A4AED; Dark Blue 31117F
+
+*/
+body{
+  background-color: #ffffff;
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px; /* Sets the font size to 16px */
+  font-weight: 300; /* Sets the font weight to 300 */
+  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  color: #4a4a4a;
+}
+img {
+  width: 100%;
+}
+a {
+  color: #7A4AED;
+  text-decoration: none; /* No underlining */
+}
+a:hover {
+  color: #31117F;
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+a:hover,
+a:focus {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+.button {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #31117F;
+  color: #ffffff; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #7A4AED; /* width of the border, type, color */
+  transition: 0.2s opacity;
+  .button:hover {
+  opacity: 0.9; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
