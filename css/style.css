@@ -37,7 +37,8 @@ a:focus {
   border-radius: 3px;
   border-bottom: 2px solid #7A4AED; /* width of the border, type, color */
   transition: 0.2s opacity;
-  .button:hover {
+}
+  .button:hover{
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
