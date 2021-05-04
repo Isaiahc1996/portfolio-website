@@ -78,7 +78,6 @@ nav > ul {
 }
 nav > ul > li {
   display: inline-block;
-  width 100%
 }
 nav > ul > li > a {
   padding: 0 15px;
@@ -86,8 +85,8 @@ nav > ul > li > a {
   font-weight: 700;
   color: #4a4a4a;
 }
-nav > ul > li > a{
-  visted
+  a:visited{
+  color:#31117F
 }
 #hero {
   background-color: #ffe4c4;
