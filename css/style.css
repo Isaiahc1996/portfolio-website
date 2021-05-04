@@ -10,7 +10,7 @@ Secondary Color (Pale Blue): #7A4AED; Dark Blue 31117F
 body{
   background-color: #ffffff;
   font-family: 'Oswald', sans-serif;
-  font-size: 16px; /* Sets the font size to 16px */
+  font-size: 18px; /* Sets the font size to 16px */
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #000000;
@@ -23,7 +23,7 @@ a {
   text-decoration: none; /* No underlining */
 }
 a:hover {
-  color: #31117F;
+  color: white;
   text-decoration: underline; /* Underlining when hovering over a link */
 }
 a:hover,
@@ -31,25 +31,28 @@ a:focus {
   color: #F58209;
   text-decoration: underline;
 }
-.button{
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #31117F;
-  color: #ffffff; /* needed to override the default link color */
+.button {
+  display: inline-block;
+  background-color: #ff7f50;
+  color: white;
   font-weight: 400;
+  text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #7A4AED; /* width of the border, type, color */
-  transition: 0.2s opacity;
+  border-bottom: 2px solid #994c30;
+  transition-duration: 0.2s;
+  transition-property: opacity;
 }
-  .button:hover{
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+.button:hover {
+  opacity: 0.8;/* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
-.button.contact{
-  background-color: transparent;
-  color: #ff7f50;
+.buttoncontact{
+  background-color: #ff7f50;
+  color: #ffffff;
   text-transform: uppercase;
   border: 2px solid #ff7f50;
+  padding: 10px
 }
 /* Layout Styling*/
 .container {
@@ -58,12 +61,17 @@ a:focus {
 .row {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 #work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
 #hero h1 {
   text-align: center; /* Centers text */
 }
 .logo {
-  max-width: 250px;
+  max-width: 100px;
 }
 header {
   background-color: #ffe4c4;
@@ -96,4 +104,46 @@ nav > ul > li > a {
   padding: 20px 0;
   display: inline-block;
   width: 100%;
+}
+/* Media Queries */
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+}
+#hero span {
+  display: block;
+}
+.col-md-6 {
+  width: 50%;
+}
+[class*="col-"] {
+  float: left;
+  padding: 10px
+}
+  /* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+}
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
 }
