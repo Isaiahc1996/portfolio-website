@@ -19,46 +19,46 @@ img {
   width: 100%;
 }
 a {
-  color: #3940FF;
+  color: #FFFFFF;
   text-decoration: none; /* No underlining */
 }
-a:hover {
-  color: white;
-  text-decoration: underline; /* Underlining when hovering over a link */
-}
-a:hover,
-a:focus {
-  color: #371FAB;
-  text-decoration: underline;
-}
+
 .button {
   display: inline-block;
-  background-color: #2F3136;
-  color: #FFFFFF;
-  font-weight: 400;
+  background-color: #221F1F;
+  color: white;
+  font-weight: 500;
   text-decoration: none;
   padding: 10px;
   border-radius: 1.5px;
-  border-bottom: 2px solid #4A4848;
+  border-bottom: 2px solid #221F1F;
   transition-duration: 0.2s;
   transition-property: opacity;
 }
 .button:hover {
   opacity: 0.8;/* Reduces the opacity of the button to 80% */
   text-decoration: none;
+  color: white
 }
 .buttoncontact{
-  background-color: #6C6C6C;
-  color: #ffffff;
+  background-color: #000328;
+  color: white;
   text-transform: uppercase;
-  border: 2px solid #6C6C6C;
+  border: 2px solid #221F1F;
   padding: 10px
 }
-.buttoncontact:hover
-.buttoncontact:focus{
-  color: #000000
+.contactme{
+  color: #3940FF
 }
+.contactme:hover{
+  color: #371FAB;
+  text-decoration: underline;
+}
+hr{
+  height: 2px;
+  background-color: black;
 
+}
 /* Layout Styling*/
 .container {
   padding: 0 15px;
@@ -79,14 +79,13 @@ a:focus {
   text-align: center; /* Centers text */
 }
 .logo {
-  max-width: 100px;
+  max-width: 75px;
 }
 header {
-  background-color: #ffffff;
+  background-color: #EFEFEF;
   text-align: center;
   padding: 10px 0;
-  box-shadow: 0px 10px 5px 0px rgba(50, 50, 50, 0.75);
-  position: relative
+style: border 2px;
 }
 nav > ul {
   list-style-type: none;
@@ -111,7 +110,6 @@ nav > ul > li > a {
   width: 100%;
 }
 
-}
 #hero span {
   display: block;
 }
@@ -133,7 +131,6 @@ Medium devices (640px and larger)
     text-align: unset;
     padding: 20px 0 13px;
   }
-
   nav {
     width: auto;
     float: right;
@@ -146,6 +143,7 @@ Medium devices (640px and larger)
   .col-md-12 {
     width: 100%;
   }
+}
 .berlin-illustration{
   width: 100%;
 max-width: 100%;
