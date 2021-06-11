@@ -20,7 +20,7 @@ img {
 }
 a {
   background: none
-
+	;color: #000000;
 	;text-decoration: none; /* No underlining */
 }
 
